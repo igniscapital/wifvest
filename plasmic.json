@@ -90,6 +90,51 @@
           "id": "IQluHq_lLHOF",
           "name": "banner.png",
           "filePath": "../public/plasmic/wifvest/images/bannerpng.png"
+        },
+        {
+          "id": "4kGsSpn-8ONB",
+          "name": "Frame 1.png",
+          "filePath": "../public/plasmic/wifvest/images/frame1Png.png"
+        },
+        {
+          "id": "YjlgSpV9n9l0",
+          "name": "Frame 2.png",
+          "filePath": "../public/plasmic/wifvest/images/frame2Png.png"
+        },
+        {
+          "id": "UhWHcFghSpcE",
+          "name": "Frame 3.png",
+          "filePath": "../public/plasmic/wifvest/images/frame3Png.png"
+        },
+        {
+          "id": "ETWgiogvocIa",
+          "name": "Frame 4.png",
+          "filePath": "../public/plasmic/wifvest/images/frame4Png.png"
+        },
+        {
+          "id": "4WnJ5My7SOSD",
+          "name": "Frame 5.png",
+          "filePath": "../public/plasmic/wifvest/images/frame5Png.png"
+        },
+        {
+          "id": "qrY8OTEtJgk6",
+          "name": "Frame 6.png",
+          "filePath": "../public/plasmic/wifvest/images/frame6Png.png"
+        },
+        {
+          "id": "ju0RuQjiUdgk",
+          "name": "Frame 7.png",
+          "filePath": "../public/plasmic/wifvest/images/frame7Png.png"
+        },
+        {
+          "id": "WD_ehV66zloo",
+          "name": "Frame 8.png",
+          "filePath": "../public/plasmic/wifvest/images/frame8Png.png"
+        },
+        {
+          "id": "lrdcJcTbFpYq",
+          "name": "Frame 9.png",
+          "filePath": "../public/plasmic/wifvest/images/frame9Png.png"
         }
       ],
       "indirect": false,
@@ -107,6 +152,54 @@
           "name": "Fetcher",
           "displayName": "plasmic-data-source-fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "r3ASNrnyvLLLAtDvzUioQ",
+      "projectApiToken": "eSFGpQaYCtO9sRbPuQ2Ll9dmLOg8I4oKhx6e1PuCrsfmUIVbFbSXcy32UrPTwF9zX2HVXA0xaIKJNhCMHvA",
+      "projectName": "react-slick",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/react_slick/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "HOQUyOpClJ",
+          "name": "SliderWrapper",
+          "displayName": "hostless-slider",
+          "componentImportPath": "@plasmicpkgs/react-slick",
+          "helper": {
+            "name": "sliderHelpers",
+            "importPath": "@plasmicpkgs/react-slick"
+          }
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "58GpZjZCWTaJ8AUhpCwt2K",
+      "projectApiToken": "DIkcfhBwjMCJSjcxfBkMuy4NImyytq5EWylxVcpS9t9EpdhnPQuBgBGxmk00AB1itMFa1KXTxOKnrjN2PN9nlA",
+      "projectName": "react-awesome-reveal",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/react_awesome_reveal/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "R6s1FdhksG",
+          "name": "Reveal",
+          "displayName": "hostless-reveal",
+          "componentImportPath": "@plasmicpkgs/react-awesome-reveal"
         }
       ],
       "customFunctions": []

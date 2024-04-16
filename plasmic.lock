@@ -1,0 +1,79 @@
+{
+  "projects": [
+    {
+      "projectId": "6HWusjyfUwmpghcrrqSoDk",
+      "version": "latest",
+      "dependencies": {},
+      "lang": "ts",
+      "fileLocks": [
+        {
+          "type": "globalVariant",
+          "assetId": "7NNT8cbWA7Fp",
+          "checksum": "e36aa748eab3d7a1fa84ec676b4ccf87"
+        },
+        {
+          "assetId": "6HWusjyfUwmpghcrrqSoDk",
+          "type": "projectCss",
+          "checksum": "55c25cd2b8c7826360160b7df873e8c4"
+        },
+        {
+          "type": "renderModule",
+          "assetId": "QK5NMrkVnzzd",
+          "checksum": "d461d2267a007f700f9f555ecd9de323"
+        },
+        {
+          "type": "cssRules",
+          "assetId": "QK5NMrkVnzzd",
+          "checksum": "d461d2267a007f700f9f555ecd9de323"
+        },
+        {
+          "type": "icon",
+          "assetId": "QuMuvsOhWeVo",
+          "checksum": "83592705945dee77799bfdafd8fb9011"
+        },
+        {
+          "type": "icon",
+          "assetId": "KAuDbkYnnxdo",
+          "checksum": "ff2c8c3f808ba2a21b76492095cf3b65"
+        },
+        {
+          "type": "image",
+          "assetId": "SUDjMOLFa4Xh",
+          "checksum": "ec5a0138c1776669c17d3dfc3f17f7b4"
+        },
+        {
+          "type": "image",
+          "assetId": "Q01M4oLk7R3t",
+          "checksum": "808d8440572526ccea760c02fdac8f19"
+        },
+        {
+          "type": "image",
+          "assetId": "Crfoj-H5MuQG",
+          "checksum": "d1daf320538d1eaeab126b03a9f4d57f"
+        },
+        {
+          "type": "image",
+          "assetId": "Qn4BId750Inw",
+          "checksum": "7317d607ef96c95bfedf5b2fcc3aa063"
+        },
+        {
+          "type": "image",
+          "assetId": "7G4Wuj_xPEqu",
+          "checksum": "f0e3e9e9b6af658acb79236a47e88ace"
+        },
+        {
+          "type": "image",
+          "assetId": "-4ju2vzQw_tu",
+          "checksum": "3ddb335b022864d3fba4693fd887b379"
+        },
+        {
+          "type": "image",
+          "assetId": "IQluHq_lLHOF",
+          "checksum": "8c2f97fb40f76f093c9e1f5af5ddca49"
+        }
+      ],
+      "codegenVersion": "0.0.1"
+    }
+  ],
+  "cliVersion": "0.1.327"
+}

@@ -6,7 +6,7 @@ import { PageParamsProvider as PageParamsProvider__ } from "@plasmicapp/react-we
 import { ScreenVariantProvider } from "../components/plasmic/wifvest/PlasmicGlobalVariant__Screen";
 import { PlasmicHomepage } from "../components/plasmic/wifvest/PlasmicHomepage";
 import { useRouter } from "next/router";
-import Slider from "react-slick";
+
 
 function Homepage() {
   // Use PlasmicHomepage to render this component as it was

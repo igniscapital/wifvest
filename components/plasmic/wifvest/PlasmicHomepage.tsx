@@ -59,6 +59,8 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import { PlasmicHead } from "@plasmicapp/react-web";
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic.module.css"; // plasmic-import: 6HWusjyfUwmpghcrrqSoDk/projectcss
@@ -80,6 +82,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
+  pageMetadataOverride?: Flex__<typeof PlasmicHead>;
   columns?: Flex__<"div">;
 };
 
@@ -141,6 +144,17 @@ function PlasmicHomepage__RenderFunc(props: {
             sty.root
           )}
         >
+          <PlasmicHead
+            data-plasmic-name={"pageMetadataOverride"}
+            data-plasmic-override={overrides.pageMetadataOverride}
+            className={classNames("__wab_instance", sty.pageMetadataOverride)}
+            description={
+              "WIFVEST is the world's first meme coin designed to embrace every memecoin out there. It's like the ultimate party outfit for your crypto portfolio! When you wear WIFVEST, you're showing your support for peace, inclusivity, and, most importantly, having a good time."
+            }
+            image={"/plasmic/wifvest/images/vestlogopng.png"}
+            title={"WIF VEST"}
+          />
+
           <section className={classNames(projectcss.all, sty.section__snt6)}>
             <Stack__
               as={"div"}
@@ -468,7 +482,9 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.link__tuIpC
                 )}
                 component={Link}
+                href={"https://Twitter.com/wifvest"}
                 platform={"nextjs"}
+                target={"_blank"}
               >
                 <Twitter3SvgrepoCom1SvgIcon
                   className={classNames(projectcss.all, sty.svg__pepMx)}
@@ -482,7 +498,9 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.link__jZtGo
                 )}
                 component={Link}
+                href={"https://t.me/WifVest"}
                 platform={"nextjs"}
+                target={"_blank"}
               >
                 <TelegramSvgrepoComsvgIcon
                   className={classNames(projectcss.all, sty.svg__pOf3)}
@@ -498,7 +516,8 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "columns"],
+  root: ["root", "pageMetadataOverride", "columns"],
+  pageMetadataOverride: ["pageMetadataOverride"],
   columns: ["columns"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -506,6 +525,7 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  pageMetadataOverride: typeof PlasmicHead;
   columns: "div";
 };
 
@@ -569,6 +589,7 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    pageMetadataOverride: makeNodeComponent("pageMetadataOverride"),
     columns: makeNodeComponent("columns"),
 
     // Metadata about props expected for PlasmicHomepage

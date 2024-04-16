@@ -61,8 +61,6 @@ import {
 
 import { PlasmicHead } from "@plasmicapp/react-web";
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal";
-import { SliderWrapper } from "@plasmicpkgs/react-slick";
-import { sliderHelpers as SliderWrapper_Helpers } from "@plasmicpkgs/react-slick";
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -87,7 +85,6 @@ export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
   pageMetadataOverride?: Flex__<typeof PlasmicHead>;
   columns?: Flex__<"div">;
-  sliderCarousel?: Flex__<typeof SliderWrapper>;
 };
 
 export interface DefaultHomepageProps {}
@@ -122,27 +119,6 @@ function PlasmicHomepage__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = useCurrentUser?.() || {};
-
-  const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
-    () => [
-      {
-        path: "sliderCarousel.currentSlide",
-        type: "private",
-        variableType: "number",
-        initFunc: ({ $props, $state, $queries, $ctx }) => 0,
-
-        refName: "sliderCarousel",
-        onMutate: generateOnMutateForSpec("currentSlide", SliderWrapper_Helpers)
-      }
-    ],
-    [$props, $ctx, $refs]
-  );
-  const $state = useDollarState(stateSpecs, {
-    $props,
-    $ctx,
-    $queries: {},
-    $refs
-  });
 
   return (
     <React.Fragment>
@@ -309,235 +285,6 @@ function PlasmicHomepage__RenderFunc(props: {
                 </Stack__>
               </div>
             </Stack__>
-            {(() => {
-              const child$Props = {
-                arrows: false,
-                autoplay: true,
-                autoplaySpeed: 0,
-                beforeChange: generateStateOnChangePropForCodeComponents(
-                  $state,
-                  "currentSlide",
-                  ["sliderCarousel", "currentSlide"],
-                  SliderWrapper_Helpers
-                ),
-                centerMode: true,
-                className: classNames("__wab_instance", sty.sliderCarousel),
-                cssEase: "linear",
-                initialSlide: generateStateValueProp($state, [
-                  "sliderCarousel",
-                  "currentSlide"
-                ]),
-                pauseOnHover: false,
-                ref: ref => {
-                  $refs["sliderCarousel"] = ref;
-                },
-                rows: 1,
-                sliderScopeClassName: sty["sliderCarousel__slider"],
-                slidesPerRow: 4,
-                speed: 4000
-              };
-              initializeCodeComponentStates(
-                $state,
-                [
-                  {
-                    name: "currentSlide",
-                    plasmicStateName: "sliderCarousel.currentSlide"
-                  }
-                ],
-                [],
-                SliderWrapper_Helpers ?? {},
-                child$Props
-              );
-
-              return (
-                <SliderWrapper
-                  data-plasmic-name={"sliderCarousel"}
-                  data-plasmic-override={overrides.sliderCarousel}
-                  {...child$Props}
-                >
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__ag3HT)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img___8WMlb)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"320px"}
-                      src={{
-                        src: "/plasmic/wifvest/images/frame1Png.png",
-                        fullWidth: 1024,
-                        fullHeight: 1024,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox___05O3R)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img___762Pp)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"320px"}
-                      src={{
-                        src: "/plasmic/wifvest/images/frame2Png.png",
-                        fullWidth: 1024,
-                        fullHeight: 1024,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__w6Xaf)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__buXWf)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"320px"}
-                      src={{
-                        src: "/plasmic/wifvest/images/frame3Png.png",
-                        fullWidth: 1024,
-                        fullHeight: 1024,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox___7RnUk)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__jWdpT)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"320px"}
-                      src={{
-                        src: "/plasmic/wifvest/images/frame4Png.png",
-                        fullWidth: 1024,
-                        fullHeight: 1024,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__w0Ku)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__vhvdO)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"320px"}
-                      src={{
-                        src: "/plasmic/wifvest/images/frame5Png.png",
-                        fullWidth: 1024,
-                        fullHeight: 1024,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox___6PhHn)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__oheuU)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"320px"}
-                      src={{
-                        src: "/plasmic/wifvest/images/frame6Png.png",
-                        fullWidth: 1024,
-                        fullHeight: 1024,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__v0Kg0)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__vKwrk)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"320px"}
-                      src={{
-                        src: "/plasmic/wifvest/images/frame7Png.png",
-                        fullWidth: 1024,
-                        fullHeight: 1024,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__wj3R7)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__d9BjM)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"320px"}
-                      src={{
-                        src: "/plasmic/wifvest/images/frame8Png.png",
-                        fullWidth: 1024,
-                        fullHeight: 1024,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__w0XGg)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img___1N6Lx)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"320px"}
-                      src={{
-                        src: "/plasmic/wifvest/images/frame9Png.png",
-                        fullWidth: 1024,
-                        fullHeight: 1024,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </div>
-                </SliderWrapper>
-              );
-            })()}
           </section>
           <section className={classNames(projectcss.all, sty.section__gRRwl)}>
             <Stack__
@@ -786,10 +533,9 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "pageMetadataOverride", "columns", "sliderCarousel"],
+  root: ["root", "pageMetadataOverride", "columns"],
   pageMetadataOverride: ["pageMetadataOverride"],
-  columns: ["columns"],
-  sliderCarousel: ["sliderCarousel"]
+  columns: ["columns"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -798,7 +544,6 @@ type NodeDefaultElementType = {
   root: "div";
   pageMetadataOverride: typeof PlasmicHead;
   columns: "div";
-  sliderCarousel: typeof SliderWrapper;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -863,7 +608,6 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     pageMetadataOverride: makeNodeComponent("pageMetadataOverride"),
     columns: makeNodeComponent("columns"),
-    sliderCarousel: makeNodeComponent("sliderCarousel"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

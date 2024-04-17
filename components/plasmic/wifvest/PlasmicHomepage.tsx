@@ -170,7 +170,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.h1__bu1De
                 )}
               >
-                {"Wellcome to $WIFVEST"}
+                {"Welcome to $WIFVEST"}
               </h1>
               <div
                 className={classNames(

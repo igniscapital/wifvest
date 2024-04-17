@@ -62,6 +62,8 @@ import {
 import { PlasmicHead } from "@plasmicapp/react-web";
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal";
 
+import { useScreenVariants as useScreenVariants_7Nnt8CbWa7Fp } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 7NNT8cbWA7Fp/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic.module.css"; // plasmic-import: 6HWusjyfUwmpghcrrqSoDk/projectcss
@@ -119,6 +121,10 @@ function PlasmicHomepage__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = useCurrentUser?.() || {};
+
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariants_7Nnt8CbWa7Fp()
+  });
 
   return (
     <React.Fragment>
@@ -189,7 +195,9 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.h4__kiJ45
                 )}
               >
-                {"CA : "}
+                {hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? "CA : 4f2mnZyVx4Kcjn2mR2J\nD6mXXxXzwyGE7k6W\nCcc7zaKB2"
+                  : "CA : 4f2mnZyVx4Kcjn2mR2JD6mXXxXzwyGE7k6WCcc7zaKB2"}
               </h4>
               <PlasmicImg__
                 alt={""}

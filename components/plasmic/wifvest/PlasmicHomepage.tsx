@@ -454,7 +454,9 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.h4__atNqr
                     )}
                   >
-                    {"-"}
+                    {hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "4f2mnZyVx4\nKcjn2mR2J\n6mXXxX\nwyGE7k6W\nCcc7zaKB2"
+                      : "4f2mnZyVx4Kcjn2mR2JD6m\nXXxXzwyGE7k6WCcc7zaKB2"}
                   </h4>
                 </div>
               </div>

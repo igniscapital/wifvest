@@ -87,6 +87,7 @@ export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
   pageMetadataOverride?: Flex__<typeof PlasmicHead>;
   columns?: Flex__<"div">;
+  h6?: Flex__<"h6">;
 };
 
 export interface DefaultHomepageProps {}
@@ -210,7 +211,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 displayWidth={"512px"}
                 loading={"lazy"}
                 src={{
-                  src: "/plasmic/wifvest/images/heroMinCharwebp.webp",
+                  src: "/plasmic/wifvest/images/ezgifcomWebpMakerwebp.webp",
                   fullWidth: 1024,
                   fullHeight: 1024,
                   aspectRatio: undefined
@@ -310,24 +311,25 @@ function PlasmicHomepage__RenderFunc(props: {
               >
                 {"Vestnomics"}
               </h1>
-              <PlasmicImg__
-                alt={""}
-                className={classNames(sty.img__lnJyV)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"auto"}
-                loading={"lazy"}
-                src={{
-                  src: "/plasmic/wifvest/images/pepeWifVestwebp.webp",
-                  fullWidth: 1792,
-                  fullHeight: 1024,
-                  aspectRatio: undefined
-                }}
-              />
-
+              <div className={classNames(projectcss.all, sty.freeBox___2Xryd)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__lnJyV)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/wifvest/images/peptranspapng.png",
+                    fullWidth: 1920,
+                    fullHeight: 1080,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
               <div className={classNames(projectcss.all, sty.freeBox__nNd2M)}>
                 <div className={classNames(projectcss.all, sty.freeBox__y41Xb)}>
                   <div
@@ -446,20 +448,131 @@ function PlasmicHomepage__RenderFunc(props: {
                   >
                     {"CA"}
                   </div>
-                  <h4
+                  <h6
+                    data-plasmic-name={"h6"}
+                    data-plasmic-override={overrides.h6}
                     className={classNames(
                       projectcss.all,
-                      projectcss.h4,
+                      projectcss.h6,
                       projectcss.__wab_text,
-                      sty.h4__atNqr
+                      sty.h6
                     )}
                   >
                     {hasVariant(globalVariants, "screen", "mobileOnly")
                       ? "4f2mnZyVx4\nKcjn2mR2J\n6mXXxX\nwyGE7k6W\nCcc7zaKB2"
                       : "4f2mnZyVx4Kcjn2mR2JD6m\nXXxXzwyGE7k6WCcc7zaKB2"}
-                  </h4>
+                  </h6>
                 </div>
               </div>
+            </Stack__>
+          </section>
+          <section className={classNames(projectcss.all, sty.section__sSJk4)}>
+            <Stack__
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__pMJ)}
+            >
+              <h1
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h1,
+                  projectcss.__wab_text,
+                  sty.h1__yxzdY
+                )}
+              >
+                {"Roadmap"}
+              </h1>
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__f3Nob)}
+              >
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___4DYif)}
+                >
+                  <h2
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.__wab_text,
+                      sty.h2__j0Pr
+                    )}
+                  >
+                    {"\ud83d\udcbc"}
+                  </h2>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__c8Tna
+                    )}
+                  >
+                    {"Vest Wallet"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__ob7V2
+                    )}
+                  >
+                    {"Your Gateway to Secure Holdings"}
+                  </div>
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__hxUld)}>
+                  <h2
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.__wab_text,
+                      sty.h2___3YWaj
+                    )}
+                  >
+                    {"\ud83d\udd04"}
+                  </h2>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__snHjs
+                    )}
+                  >
+                    {"VestDEX"}
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__gvOhi
+                    )}
+                  >
+                    {"Your Decentralized Exchange of Choice"}
+                  </div>
+                </div>
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___6Ptt1)}
+                >
+                  <h2
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.__wab_text,
+                      sty.h2___3UPa
+                    )}
+                  >
+                    {"\ud83d\udcb0"}
+                  </h2>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__sYkBe
+                    )}
+                  >
+                    {"Embracing Scarcity for Price Soaring Potential"}
+                  </div>
+                </div>
+              </Stack__>
             </Stack__>
           </section>
           <section className={classNames(projectcss.all, sty.section__nkiR9)}>
@@ -543,9 +656,10 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "pageMetadataOverride", "columns"],
+  root: ["root", "pageMetadataOverride", "columns", "h6"],
   pageMetadataOverride: ["pageMetadataOverride"],
-  columns: ["columns"]
+  columns: ["columns"],
+  h6: ["h6"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -554,6 +668,7 @@ type NodeDefaultElementType = {
   root: "div";
   pageMetadataOverride: typeof PlasmicHead;
   columns: "div";
+  h6: "h6";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -618,6 +733,7 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     pageMetadataOverride: makeNodeComponent("pageMetadataOverride"),
     columns: makeNodeComponent("columns"),
+    h6: makeNodeComponent("h6"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
